@@ -24,5 +24,4 @@ jobs:
     - name: Analyse the test and coverage
       run: |
         pytest $(git ls-files 'practica-gps-ci-master/test.py')
-        coverage run
         coverage report
