@@ -23,5 +23,6 @@ jobs:
         pylint $(git ls-files 'practica-gps-ci-master/main.py')
     - name: Analyse the test and coverage
       run: |
-        coverage run -m pytest
+        pytest
+        coverage run
         coverage report
