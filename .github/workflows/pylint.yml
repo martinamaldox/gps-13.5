@@ -20,4 +20,4 @@ jobs:
         pip install pylint
     - name: Analysing the code with pylint
       run: |
-        pylint /practica-gps-ci-master/main.py
+        pylint $(git ls-files 'practica-gps-ci-master/main.py')
